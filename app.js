@@ -4,8 +4,8 @@ const fs = require("node:fs")
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
-  apiKey: 'yourkeyhere',
-});
+  apiKey: 'addyourkeyhere',
+}); 
 
 const openai = new OpenAIApi(configuration);
 
@@ -41,5 +41,5 @@ const resp = await openai.createTranslation(
 console.log(resp.data.text, '\n')
 }
 
-//translateMe()
+translateMe()
 
